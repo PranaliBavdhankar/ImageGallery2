@@ -1,0 +1,28 @@
+Today we are going to see a responsive image gallery using pure HTML, CSS amd JS. 
+
+So lets start with with adding boiler plate in a HTML document.
+In a HTML documnet a title is given a the top named Reponsive Image Gallery 
+to enhance the user that of what type of a webpage he/she had visited
+
+ In this page click events are controlled by javascript. We have created page named script.js for this page.
+ On the webapge when you click on image  openModal() function will be called.
+ In this function display property of <div> tag having id "myModal" will set to "block" and will be displayed as seperate block
+ and size of this block will set to display size.
+
+ Immediately after calling openModel() function currentSlide() function is called.
+ currentSlide() function we set index of current image and call showSlides() function. 
+showSlides() function takes index of current image as argument. 
+In showSlides() function we set display property of all elements having id "mySlides" to none.
+ by doing this all images will be invisible.
+
+after that the we change display property of <div> tag to "block"  which is at position "slideIndex".
+ And it shows single image.
+
+On this screen you will see next button, previous button and close button.
+
+When you click next button, plusSlides() function will be called. 
+This function will increase "slideIndex" and call showSlides() functin.
+showSlides() function will show slide at slideIndex.
+
+When you click previous button again plusSlides() function will  be called but at this time "-1" is passed as argument
+ to this function and it will decrease slideIndex by on and show previous image.
